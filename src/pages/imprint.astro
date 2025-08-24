@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Aviso Legal - Janna Ziesemer">
+  <Header />
+  <main class="pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Aviso Legal (Impressum)</h1>
+      
+      <div class="prose prose-lg max-w-none">
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Información según § 5 TMG</h2>
+        <div class="text-gray-700 mb-6">
+          <p><strong>Janna Ziesemer</strong></p>
+          <p>[Dirección completa]</p>
+          <p>[Código postal, Ciudad]</p>
+          <p>[País]</p>
+        </div>
+        
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Contacto</h2>
+        <div class="text-gray-700 mb-6">
+          <p><strong>Teléfono:</strong> +49 (0) 123 456 789</p>
+          <p><strong>Email:</strong> 
+            <a href="mailto:janna.ziesemer@example.com" class="text-blue-600 hover:text-blue-700">
+              janna.ziesemer@example.com
+            </a>
+          </p>
+        </div>
+        
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Responsabilidad del contenido</h2>
+        <p class="text-gray-700 mb-6">
+          Los contenidos de nuestras páginas han sido creados con el máximo cuidado. Sin embargo, no podemos garantizar que los contenidos sean exactos, completos o actualizados.
+        </p>
+        
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Responsabilidad de los enlaces</h2>
+        <p class="text-gray-700">
+          Nuestra oferta contiene enlaces a sitios web externos de terceros sobre cuyos contenidos no tenemos influencia. Por ello, no podemos asumir ninguna garantía por estos contenidos externos.
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

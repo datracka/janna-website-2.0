@@ -1,0 +1,88 @@
+---
+import { getCurrentLanguage, getTranslations, getLocalizedPath, getAlternateLanguage } from '../i18n/utils';
+
+const currentLanguage = getCurrentLanguage(Astro.url.pathname);
+const t = getTranslations(currentLanguage);
+const alternateLang = getAlternateLanguage(currentLanguage);
+---
+
+<header class="bg-white shadow-sm fixed w-full top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo/Brand -->
+      <div class="flex-shrink-0">
+        <h1 class="text-xl font-bold text-gray-900">
+          {t.hero.title}
+        </h1>
+        <p class="text-sm text-gray-600">{t.hero.subtitle}</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          {t.nav.about}
+        </a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          {t.nav.services}
+        </a>
+        <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          {t.nav.testimonials}
+        </a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+          {t.nav.contact}
+        </a>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="flex items-center space-x-2">
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', ''), 'es')}
+          class={`px-2 py-1 text-sm rounded ${currentLanguage === 'es' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
+        >
+          ES
+        </a>
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', ''), 'en')}
+          class={`px-2 py-1 text-sm rounded ${currentLanguage === 'en' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
+        >
+          EN
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">
+        {t.nav.about}
+      </a>
+      <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">
+        {t.nav.services}
+      </a>
+      <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-600">
+        {t.nav.testimonials}
+      </a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">
+        {t.nav.contact}
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

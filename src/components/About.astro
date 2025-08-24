@@ -1,0 +1,67 @@
+---
+import { getCurrentLanguage, getTranslations } from '../i18n/utils';
+
+const currentLanguage = getCurrentLanguage(Astro.url.pathname);
+const t = getTranslations(currentLanguage);
+---
+
+<section id="about" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+        {t.about.title}
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div>
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+          {t.about.description}
+        </p>
+        
+        <!-- Qualifications/Experience Highlights -->
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+            <p class="text-gray-700">Experiencia en enseñanza de alemán e inglés como lengua extranjera</p>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+            <p class="text-gray-700">Certificaciones reconocidas internacionalmente</p>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+            <p class="text-gray-700">Especialización en clientes corporativos y estudiantes individuales</p>
+          </div>
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+            <p class="text-gray-700">Preparación para exámenes oficiales (Goethe, TestDaF, Telc)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline/Qualifications Visual -->
+      <div class="bg-gray-50 rounded-lg p-8">
+        <h3 class="text-xl font-semibold text-gray-900 mb-6">Certificaciones y Experiencia</h3>
+        
+        <div class="space-y-6">
+          <div class="border-l-2 border-blue-600 pl-4">
+            <h4 class="font-medium text-gray-900">Certificación en Enseñanza de Alemán</h4>
+            <p class="text-sm text-gray-600">Instituto de Formación Docente</p>
+          </div>
+          
+          <div class="border-l-2 border-blue-600 pl-4">
+            <h4 class="font-medium text-gray-900">Experiencia Corporativa</h4>
+            <p class="text-sm text-gray-600">Empresas multinacionales y startups</p>
+          </div>
+          
+          <div class="border-l-2 border-blue-600 pl-4">
+            <h4 class="font-medium text-gray-900">Preparación de Exámenes</h4>
+            <p class="text-sm text-gray-600">Goethe, TestDaF, Telc, DSH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
