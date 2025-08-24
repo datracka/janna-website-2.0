@@ -7,7 +7,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Aprende alemán con Janna Ziesemer - Profesora especializada en alemán como lengua extranjera" } = Astro.props;
+const { title, description = "Profesora de alemán certificada en Álava y La Rioja. Clases de alemán para empresas y particulares, presenciales y online. Preparación exámenes oficiales Goethe, TestDaF. ¡Primera clase gratis!" } = Astro.props;
 
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
@@ -18,10 +18,43 @@ const t = getTranslations(currentLanguage);
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
+    <meta name="keywords" content="profesor alemán, clases alemán Álava, clases alemán La Rioja, formación alemán empresas, alemán negocios, exámenes Goethe, TestDaF, alemán online, deutschlehrer, German teacher" />
+    <meta name="author" content="Janna Ziesemer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={`https://janna-ziesemer.com${Astro.url.pathname}`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={currentLanguage === 'es' ? 'es_ES' : currentLanguage === 'de' ? 'de_DE' : 'en_US'} />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Janna Ziesemer - Profesora de Alemán",
+      "description": "Profesora de alemán certificada especializada en formación corporativa y clases particulares en Álava y La Rioja",
+      "url": "https://janna-ziesemer.com",
+      "areaServed": ["Álava", "La Rioja", "País Vasco"],
+      "serviceType": ["Clases de alemán", "Formación corporativa", "Preparación exámenes"],
+      "teaches": "Alemán como lengua extranjera",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish", "German", "English"]
+      }
+    }
+    </script>
     
     <!-- Google Analytics -->
     {import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID && (
