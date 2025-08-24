@@ -1,9 +1,8 @@
 ---
-import { getCurrentLanguage, getTranslations, getLocalizedPath, getAlternateLanguage } from '../i18n/utils';
+import { getCurrentLanguage, getTranslations, getLocalizedPath } from '../i18n/utils';
 
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
-const alternateLang = getAlternateLanguage(currentLanguage);
 ---
 
 <header class="bg-white shadow-sm fixed w-full top-0 z-50">
@@ -36,16 +35,22 @@ const alternateLang = getAlternateLanguage(currentLanguage);
       <!-- Language Switcher -->
       <div class="flex items-center space-x-2">
         <a 
-          href={getLocalizedPath(Astro.url.pathname.replace('/en', ''), 'es')}
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'es')}
           class={`px-2 py-1 text-sm rounded ${currentLanguage === 'es' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
         >
           ES
         </a>
         <a 
-          href={getLocalizedPath(Astro.url.pathname.replace('/en', ''), 'en')}
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'en')}
           class={`px-2 py-1 text-sm rounded ${currentLanguage === 'en' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
         >
           EN
+        </a>
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'de')}
+          class={`px-2 py-1 text-sm rounded ${currentLanguage === 'de' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
+        >
+          DE
         </a>
       </div>
 
@@ -73,6 +78,28 @@ const alternateLang = getAlternateLanguage(currentLanguage);
       <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">
         {t.nav.contact}
       </a>
+      
+      <!-- Mobile Language Switcher -->
+      <div class="flex space-x-2 mt-4 pt-4 border-t border-gray-200">
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'es')}
+          class={`px-3 py-1 text-sm rounded ${currentLanguage === 'es' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}
+        >
+          Español
+        </a>
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'en')}
+          class={`px-3 py-1 text-sm rounded ${currentLanguage === 'en' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}
+        >
+          English
+        </a>
+        <a 
+          href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'de')}
+          class={`px-3 py-1 text-sm rounded ${currentLanguage === 'de' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'}`}
+        >
+          Deutsch
+        </a>
+      </div>
     </div>
   </nav>
 </header>
