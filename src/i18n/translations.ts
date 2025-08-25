@@ -66,6 +66,28 @@ export const translations = {
       certification:
         "Profesora certificada • Metodología probada • Primera clase gratuita",
     },
+    imprint: {
+      title: "Aviso Legal (Impressum)",
+      infoAccording: "Información según § 5 TMG",
+      name: "Janna Ziesemer",
+      address: {
+        street: "Mendoza 22",
+        city: "Oyón 01320",
+        region: "Álava",
+        country: "España",
+      },
+      contact: "Contacto",
+      phone: "Teléfono",
+      email: "Email",
+      emailAddress: "janna.ziesemer@googlemail.com",
+      phoneNumber: "+34 123 456 789",
+      contentLiability: "Responsabilidad del contenido",
+      contentLiabilityText:
+        "Los contenidos de nuestras páginas han sido creados con el máximo cuidado. Sin embargo, no podemos garantizar que los contenidos sean exactos, completos o actualizados.",
+      linkLiability: "Responsabilidad de los enlaces",
+      linkLiabilityText:
+        "Nuestra oferta contiene enlaces a sitios web externos de terceros sobre cuyos contenidos no tenemos influencia. Por ello, no podemos asumir ninguna garantía por estos contenidos externos.",
+    },
   },
   en: {
     nav: {
@@ -132,6 +154,28 @@ export const translations = {
       certification:
         "Certified Teacher • Proven Methodology • First lesson free",
     },
+    imprint: {
+      title: "Legal Notice (Impressum)",
+      infoAccording: "Information according to § 5 TMG",
+      name: "Janna Ziesemer",
+      address: {
+        street: "Mendoza 22",
+        city: "Oyón 01320",
+        region: "Álava",
+        country: "Spain",
+      },
+      contact: "Contact",
+      phone: "Phone",
+      email: "Email",
+      emailAddress: "janna.ziesemer@googlemail.com",
+      phoneNumber: "+34 123 456 789",
+      contentLiability: "Liability for content",
+      contentLiabilityText:
+        "The contents of our pages have been created with the utmost care. However, we cannot guarantee that the contents are accurate, complete or up-to-date.",
+      linkLiability: "Liability for links",
+      linkLiabilityText:
+        "Our offer contains links to external websites of third parties on whose contents we have no influence. Therefore, we cannot assume any guarantee for these external contents.",
+    },
   },
   de: {
     nav: {
@@ -197,6 +241,28 @@ export const translations = {
       copyright: "© 2025 Janna Ziesemer. Alle Rechte vorbehalten.",
       certification:
         "Zertifizierte Lehrerin • Bewährte Methodik • Erste Stunde kostenlos",
+    },
+    imprint: {
+      title: "Impressum",
+      infoAccording: "Angaben gemäß § 5 TMG",
+      name: "Janna Ziesemer",
+      address: {
+        street: "Mendoza 22",
+        city: "Oyón 01320",
+        region: "Álava",
+        country: "Spanien",
+      },
+      contact: "Kontakt",
+      phone: "Telefon",
+      email: "E-Mail",
+      emailAddress: "janna.ziesemer@googlemail.com",
+      phoneNumber: "+34 123 456 789",
+      contentLiability: "Haftung für Inhalte",
+      contentLiabilityText:
+        "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.",
+      linkLiability: "Haftung für Links",
+      linkLiabilityText:
+        "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.",
     },
   },
 } as const;
