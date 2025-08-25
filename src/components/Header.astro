@@ -11,7 +11,8 @@ const t = getTranslations(currentLanguage);
       <!-- Logo/Brand -->
       <div class="flex-shrink-0">
         <h1 class="text-xl font-bold text-gray-900">
-          {t.hero.title}
+          <span class="hidden sm:inline">{t.hero.title}</span>
+          <span class="sm:hidden">{t.hero.titleMobile}</span>
         </h1>
         <p class="text-sm text-gray-600">{t.hero.subtitle}</p>
       </div>
@@ -33,7 +34,7 @@ const t = getTranslations(currentLanguage);
       </div>
 
       <!-- Language Switcher -->
-      <div class="flex items-center space-x-2">
+      <div class="hidden md:flex items-center space-x-2">
         <a 
           href={getLocalizedPath(Astro.url.pathname.replace('/en', '').replace('/de', ''), 'es')}
           class={`px-2 py-1 text-sm rounded ${currentLanguage === 'es' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600'}`}
