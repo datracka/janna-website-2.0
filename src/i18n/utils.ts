@@ -6,14 +6,16 @@ export function getTranslations(lang: Language) {
 
 export function getCurrentLanguage(url: string): Language {
   if (url.includes("/en")) return "en";
+  if (url.includes("/de")) return "de";
   return "es";
 }
 
 export function getLocalizedPath(path: string, lang: Language): string {
   if (lang === "es") return path;
-  return `/en${path}`;
+  return `/${lang}${path}`;
 }
 
-export function getAlternateLanguage(currentLang: Language): Language {
-  return currentLang === "es" ? "en" : "es";
+export function getAlternateLanguages(currentLang: Language): Language[] {
+  const allLanguages: Language[] = ['es', 'en', 'de'];
+  return allLanguages.filter(lang => lang !== currentLang);
 }
