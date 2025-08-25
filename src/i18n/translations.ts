@@ -9,8 +9,7 @@ export const translations = {
     hero: {
       title: "Profesora de Alemán en Álava y La Rioja",
       titleMobile: "Profesora de Alemán",
-      subtitle:
-        "Janna Ziesemer - Especialista en Alemán como Lengua Extranjera",
+      subtitle: "Especialista en Alemán como Lengua Extranjera",
       tagline:
         "Clases de alemán para empresas y particulares • Presencial y online • Preparación de exámenes oficiales",
       cta: "Reserva tu clase de prueba gratuita",
@@ -100,7 +99,7 @@ export const translations = {
     hero: {
       title: "German Teacher in Álava and La Rioja",
       titleMobile: "German Teacher",
-      subtitle: "Janna Ziesemer - German as Foreign Language Specialist",
+      subtitle: "German as Foreign Language Specialist",
       tagline:
         "German classes for companies and individuals • In-person and online • Official exam preparation",
       cta: "Book your free trial lesson",
@@ -189,7 +188,7 @@ export const translations = {
     hero: {
       title: "Deutschlehrerin in Álava und La Rioja",
       titleMobile: "Deutschlehrerin",
-      subtitle: "Janna Ziesemer - DaF-Spezialistin",
+      subtitle: "DaF-Spezialistin",
       tagline:
         "Deutschunterricht für Unternehmen und Privatpersonen • Präsenz und online • Offizielle Prüfungsvorbereitung",
       cta: "Kostenlose Probestunde buchen",
