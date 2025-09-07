@@ -4,23 +4,7 @@ import { getCurrentLanguage, getTranslations } from '../i18n/utils';
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
 
-const testimonials = [
-  {
-    text: "Janna es una profesora excepcional. Su método de enseñanza me ayudó a aprobar el examen Goethe B2 en pocos meses.",
-    author: "Julia Soar",
-    role: "Estudiante individual EOI"
-  },
-  {
-    text: "Gran profesora! Las clases de alemán para empresas mejoraron muchísimo la comunicación de nuestro equipo con los clientes alemanes.",
-    author: "Miguel Campillos",
-    role: "Game Designer BigPoint GmbH"
-  },
-  {
-    text: "Las clases de alemán de Janna siempre están bien estructuradas y son muy motivadoras. ¡Lo recomiendo encarecidamente!",
-    author: "Angel Ruiz",
-    role: "GeoPanel SA"
-  }
-];
+const testimonials = t.testimonials.items;
 ---
 
 <section id="testimonials" class="py-16 bg-white">
@@ -55,9 +39,9 @@ const testimonials = [
     <!-- Optional: Add more testimonials button -->
     <div class="text-center mt-12">
       <p class="text-gray-600">
-        ¿Quieres compartir tu experiencia? 
+        {t.testimonials.callToAction}
         <a href="#contact" class="text-blue-600 hover:text-blue-700 font-medium">
-          Contáctanos
+          {t.testimonials.contactLink}
         </a>
       </p>
     </div>
