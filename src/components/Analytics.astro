@@ -1,24 +1,22 @@
 ---
-const GA_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID; // e.g. G-XH2NGMF413
+const GA_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
 ---
 
-{/* Partytown loader (keep this once in <head>) */}
-<script>
-  window.partytown = { lib: '/~partytown/', forward: ['dataLayer.push', 'gtag'] };
-</script>
-<script is:inline src="/~partytown/partytown.js"></script>
-
-{/* Load GA library via Partytown */}
-<script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-
-{/* INIT GA — note set:html so Astro evaluates the template and injects GA_ID */}
-<script
-  type="text/partytown"
-  set:html={`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', '${GA_ID}', { anonymize_ip: true });
-  `}
-></script>
+{GA_ID && (
+  <>
+    <!-- Load GA4 library via Partytown -->
+    <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+    
+    <!-- Initialize GA4 in the worker -->
+    <script
+      type="text/partytown"
+      set:html={`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '${GA_ID}', { anonymize_ip: true });
+      `}
+    ></script>
+  </>
+)}
     
