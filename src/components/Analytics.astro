@@ -1,0 +1,27 @@
+---
+const GA_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
+---
+
+{GA_ID && (
+  <>
+    <!-- Partytown config + loader -->
+    <script>
+      // forward gtag/dataLayer calls from main thread to the worker
+      window.partytown = { lib: '/~partytown/', forward: ['dataLayer.push', 'gtag'] };
+    </script>
+    <script is:inline src="/~partytown/partytown.js"></script>
+
+    <!-- Load GA4 library via Partytown -->
+    <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+
+    <!-- Initialize GA4 in the worker (NO import.meta here!) -->
+    <script type="text/partytown">
+      {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', '${GA_ID}', { anonymize_ip: true });
+      `}
+    </script>
+  </>
+)}
