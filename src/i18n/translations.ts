@@ -29,7 +29,7 @@ export const translations = {
           "Preparación garantizada para exámenes Goethe, TestDaF, Telc y DSH",
         title: "Experiencia y Certificaciones",
         cert1Title: "Certificación Oficial DaF (Deutsch als Fremdsprache)",
-        cert1Desc: "Instituto de Formación Docente - Universidad de Múnich",
+        cert1Desc: "Formación en periodismo y multimedia - Universidad de Hamburgo",
         cert2Title: "Experiencia Empresarial Multinacional",
         cert2Desc:
           "Formación en alemán para empresas tecnológicas y manufactureras",
@@ -48,6 +48,25 @@ export const translations = {
     },
     testimonials: {
       title: "Testimonios",
+      items: [
+        {
+          text: "Janna es una profesora excepcional. Su método de enseñanza me ayudó a aprobar el examen Goethe B2 en pocos meses.",
+          author: "Julia Soar",
+          role: "Estudiante individual EOI"
+        },
+        {
+          text: "Gran profesora! Las clases de alemán para empresas mejoraron muchísimo la comunicación de nuestro equipo con los clientes alemanes.",
+          author: "Miguel Campillos",
+          role: "Game Designer BigPoint GmbH"
+        },
+        {
+          text: "Las clases de alemán de Janna siempre están bien estructuradas y son muy motivadoras. ¡Lo recomiendo encarecidamente!",
+          author: "Angel Ruiz",
+          role: "GeoPanel SA"
+        }
+      ],
+      callToAction: "¿Quieres compartir tu experiencia?",
+      contactLink: "Contáctanos"
     },
     contact: {
       title: "Contacto - Profesora de Alemán en Álava y La Rioja",
@@ -119,7 +138,7 @@ export const translations = {
           "Guaranteed preparation for Goethe, TestDaF, Telc and DSH examinations",
         title: "Experience and Certifications",
         cert1Title: "Official DaF Certification (German as Foreign Language)",
-        cert1Desc: "Teacher Training Institute - University of Munich",
+        cert1Desc: "Journalism and Multimedia - University of Hamburg",
         cert2Title: "Multinational Corporate Experience",
         cert2Desc: "German training for technology and manufacturing companies",
         cert3Title: "Official Exam Specialist",
@@ -137,6 +156,25 @@ export const translations = {
     },
     testimonials: {
       title: "Testimonials",
+      items: [
+        {
+          text: "Janna is an exceptional teacher. Her teaching method helped me pass the Goethe B2 exam in just a few months.",
+          author: "Julia Soar",
+          role: "Individual Student EOI"
+        },
+        {
+          text: "Great teacher! The German classes for companies greatly improved our team's communication with German clients.",
+          author: "Miguel Campillos",
+          role: "Game Designer BigPoint GmbH"
+        },
+        {
+          text: "Janna's German classes are always well-structured and very motivating. I highly recommend her!",
+          author: "Angel Ruiz",
+          role: "GeoPanel SA"
+        }
+      ],
+      callToAction: "Want to share your experience?",
+      contactLink: "Contact us"
     },
     contact: {
       title: "Contact - German Teacher in Álava and La Rioja",
@@ -208,7 +246,7 @@ export const translations = {
           "Garantierte Vorbereitung für Goethe-, TestDaF-, Telc- und DSH-Prüfungen",
         title: "Erfahrung und Zertifizierungen",
         cert1Title: "Offizielle DaF-Zertifizierung (Deutsch als Fremdsprache)",
-        cert1Desc: "Lehrerausbildungsinstitut - Universität München",
+        cert1Desc: "Journalismus und Multimedia - Universität Hamburg",
         cert2Title: "Multinationale Unternehmenserfahrung",
         cert2Desc: "Deutschtraining für Technologie- und Fertigungsunternehmen",
         cert3Title: "Spezialistin für offizielle Prüfungen",
@@ -226,6 +264,25 @@ export const translations = {
     },
     testimonials: {
       title: "Referenzen",
+      items: [
+        {
+          text: "Janna ist eine außergewöhnliche Lehrerin. Ihre Lehrmethode hat mir geholfen, die Goethe B2 Prüfung in nur wenigen Monaten zu bestehen.",
+          author: "Julia Soar",
+          role: "Einzelstudent EOI"
+        },
+        {
+          text: "Großartige Lehrerin! Der Deutschunterricht für Unternehmen hat die Kommunikation unseres Teams mit deutschen Kunden erheblich verbessert.",
+          author: "Miguel Campillos",
+          role: "Game Designer BigPoint GmbH"
+        },
+        {
+          text: "Jannas Deutschstunden sind immer gut strukturiert und sehr motivierend. Ich kann sie wärmstens empfehlen!",
+          author: "Angel Ruiz",
+          role: "GeoPanel SA"
+        }
+      ],
+      callToAction: "Möchten Sie Ihre Erfahrung teilen?",
+      contactLink: "Kontaktieren Sie uns"
     },
     contact: {
       title: "Kontakt - Deutschlehrerin in Álava und La Rioja",

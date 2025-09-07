@@ -4,24 +4,7 @@ import { getCurrentLanguage, getTranslations } from '../i18n/utils';
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
 
-// Sample testimonials - these can be replaced with real ones later
-const testimonials = [
-  {
-    text: "Janna es una profesora excepcional. Su método de enseñanza me ayudó a aprobar el examen Goethe B2 en pocos meses.",
-    author: "M. García",
-    role: "Estudiante individual"
-  },
-  {
-    text: "Excellent teacher! The corporate German classes have really improved our team's communication with German clients.",
-    author: "Sarah K.",
-    role: "Corporate Client"
-  },
-  {
-    text: "Die Deutschstunden mit Janna sind immer gut strukturiert und motivierend. Sehr empfehlenswert!",
-    author: "L. Rodríguez",
-    role: "Private Student"
-  }
-];
+const testimonials = t.testimonials.items;
 ---
 
 <section id="testimonials" class="py-16 bg-white">
@@ -56,9 +39,9 @@ const testimonials = [
     <!-- Optional: Add more testimonials button -->
     <div class="text-center mt-12">
       <p class="text-gray-600">
-        ¿Quieres compartir tu experiencia? 
+        {t.testimonials.callToAction}
         <a href="#contact" class="text-blue-600 hover:text-blue-700 font-medium">
-          Contáctanos
+          {t.testimonials.contactLink}
         </a>
       </p>
     </div>
