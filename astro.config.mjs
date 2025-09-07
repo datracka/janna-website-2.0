@@ -17,7 +17,7 @@ export default defineConfig({
   },
   integrations: [react(), partytown({
     config: {
-      forward: ['gtag']
+      forward: ['dataLayer.push', 'gtag']
     }
   })],
   vite: {

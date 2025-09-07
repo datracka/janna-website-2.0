@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { getCurrentLanguage, getTranslations } from '../i18n/utils';
+import Analytics from '../components/Analytics.astro';
 
 export interface Props {
   title: string;
@@ -57,15 +58,7 @@ const t = getTranslations(currentLanguage);
     </script>
     
     <!-- Google Analytics -->
-    {import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID && (
-      <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID}`}></script>
-      <script type="text/partytown">
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID);
-      </script>
-    )}
+    <Analytics />
   </head>
   <body class="font-sans bg-white text-gray-900">
     <slot />
