@@ -4,22 +4,21 @@ import { getCurrentLanguage, getTranslations } from '../i18n/utils';
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
 
-// Sample testimonials - these can be replaced with real ones later
 const testimonials = [
   {
     text: "Janna es una profesora excepcional. Su método de enseñanza me ayudó a aprobar el examen Goethe B2 en pocos meses.",
-    author: "M. García",
-    role: "Estudiante individual"
+    author: "Julia Soar",
+    role: "Estudiante individual EOI"
   },
   {
-    text: "Excellent teacher! The corporate German classes have really improved our team's communication with German clients.",
-    author: "Sarah K.",
-    role: "Corporate Client"
+    text: "Gran profesora! Las clases de alemán para empresas mejoraron muchísimo la comunicación de nuestro equipo con los clientes alemanes.",
+    author: "Miguel Campillos",
+    role: "Game Designer BigPoint GmbH"
   },
   {
-    text: "Die Deutschstunden mit Janna sind immer gut strukturiert und motivierend. Sehr empfehlenswert!",
-    author: "L. Rodríguez",
-    role: "Private Student"
+    text: "Las clases de alemán de Janna siempre están bien estructuradas y son muy motivadoras. ¡Lo recomiendo encarecidamente!",
+    author: "Angel Ruiz",
+    role: "GeoPanel SA"
   }
 ];
 ---
