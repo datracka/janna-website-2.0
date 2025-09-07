@@ -6,7 +6,7 @@ const GA_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID; // e.g. G-XH2NGMF413
 <script>
   window.partytown = { lib: '/~partytown/', forward: ['dataLayer.push', 'gtag'] };
 </script>
-<script src="/~partytown/partytown.js"></script>
+<script is:inline src="/~partytown/partytown.js"></script>
 
 {/* Load GA library via Partytown */}
 <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
