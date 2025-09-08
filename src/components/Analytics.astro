@@ -14,7 +14,20 @@ const GA_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', '${GA_ID}', { anonymize_ip: true });
+            
+        // Get the ?utm_company_email= param from the URL
+        const qs = new URLSearchParams(location.search);
+        const companyEmail = qs.get('utm_company_email');
+            
+        // Init GA without auto page_view
+        gtag('config', '${GA_ID}', { anonymize_ip: true, send_page_view: false });
+            
+        // Fire a custom page_view with your parameter
+        if (companyEmail) {
+          gtag('event', 'page_view', { utm_company_email: companyEmail });
+        } else {
+          gtag('event', 'page_view');
+        }
       `}
     ></script>
   </>
