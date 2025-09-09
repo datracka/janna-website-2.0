@@ -20,19 +20,20 @@ export const translations = {
         "Soy Janna Ziesemer, profesora especializada en alemán e inglés como lengua extranjera. Ofrezco formación lingüística para empresas en Álava y La Rioja, así como clases particulares presenciales y online. Mi experiencia incluye programas corporativos para multinacionales y preparación intensiva para exámenes oficiales.",
       qualifications: {
         experience:
-          "Más de 5 años enseñando alemán a empresas y estudiantes en el País Vasco y La Rioja",
+          "Diez años de experiencia enseñando alemán a estudiantes y empresas en Hamburgo, Barcelona y La Rioja",
         certifications:
           "Certificaciones oficiales reconocidas por el Instituto Goethe y universidades alemanas",
         specialization:
-          "Especialista en formación corporativa y clases particulares personalizadas",
+          "Alemán de negocios en empresas como Beiersdorf (Hamburgo), SCRM – Lidl International Hub (Barcelona), GeoPannel (Logroño)",
         examPrep:
           "Preparación garantizada para exámenes Goethe, TestDaF, Telc y DSH",
         title: "Experiencia y Certificaciones",
         cert1Title: "Certificación Oficial DaF (Deutsch als Fremdsprache)",
-        cert1Desc: "Formación en periodismo y multimedia - Universidad de Hamburgo",
-        cert2Title: "Experiencia Empresarial Multinacional",
+        cert1Desc:
+          "Diplomada en Periodismo y Comunicación de Medios – HAW Hamburgo",
+        cert2Title: "Experiencia internacional en la Escuela Goethe en Bolivia",
         cert2Desc:
-          "Formación en alemán para empresas tecnológicas y manufactureras",
+          "Profesora en la Escuela Oficial de Idiomas – curso de verano",
         cert3Title: "Especialista en Exámenes Oficiales",
         cert3Desc: "Preparación certificada Goethe, TestDaF, Telc, DSH",
       },
@@ -52,21 +53,21 @@ export const translations = {
         {
           text: "Janna es una profesora excepcional. Su método de enseñanza me ayudó a aprobar el examen Goethe B2 en pocos meses.",
           author: "Julia Soar",
-          role: "Estudiante individual EOI"
+          role: "Estudiante individual EOI",
         },
         {
           text: "Gran profesora! Las clases de alemán para empresas mejoraron muchísimo la comunicación de nuestro equipo con los clientes alemanes.",
           author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH"
+          role: "Game Designer BigPoint GmbH",
         },
         {
-          text: "Las clases de alemán de Janna siempre están bien estructuradas y son muy motivadoras. ¡Lo recomiendo encarecidamente!",
-          author: "Angel Ruiz",
-          role: "GeoPanel SA"
-        }
+          text: "Las clases de Janna hacen que aprender alemán sea divertido y ligero. Aunque las tenemos los lunes, para mí son como un pequeño viernes: un buen inicio de semana, lleno de energía y aprendizaje práctico.",
+          author: "Fabián Gómez",
+          role: "Geopannel SA",
+        },
       ],
       callToAction: "¿Quieres compartir tu experiencia?",
-      contactLink: "Contáctanos"
+      contactLink: "Contáctanos",
     },
     contact: {
       title: "Contacto - Profesora de Alemán en Álava y La Rioja",
@@ -129,18 +130,18 @@ export const translations = {
         "I am Janna Ziesemer, specialized in German and English as foreign languages. I provide language training for companies in Álava and La Rioja, as well as private lessons both in-person and online. My experience includes corporate programs for multinational companies and intensive preparation for official examinations.",
       qualifications: {
         experience:
-          "Over 5 years teaching German to companies and students in the Basque Country and La Rioja",
+          "Ten years of experience teaching German to students and companies in Hamburg, Barcelona, and La Rioja",
         certifications:
           "Official certifications recognized by the Goethe Institute and German universities",
         specialization:
-          "Specialist in corporate training and personalized private lessons",
+          "Business German at companies like Beiersdorf (Hamburg), SCRM – Lidl International Hub (Barcelona), GeoPannel (Logroño)",
         examPrep:
           "Guaranteed preparation for Goethe, TestDaF, Telc and DSH examinations",
         title: "Experience and Certifications",
         cert1Title: "Official DaF Certification (German as Foreign Language)",
-        cert1Desc: "Journalism and Multimedia - University of Hamburg",
-        cert2Title: "Multinational Corporate Experience",
-        cert2Desc: "German training for technology and manufacturing companies",
+        cert1Desc: "Degree in Journalism and Media Communication – HAW Hamburg",
+        cert2Title: "International experience at the Goethe School in Bolivia",
+        cert2Desc: "Teacher at the Official School of Languages – summer courses",
         cert3Title: "Official Exam Specialist",
         cert3Desc: "Certified preparation Goethe, TestDaF, Telc, DSH",
       },
@@ -160,21 +161,21 @@ export const translations = {
         {
           text: "Janna is an exceptional teacher. Her teaching method helped me pass the Goethe B2 exam in just a few months.",
           author: "Julia Soar",
-          role: "Individual Student EOI"
+          role: "Individual Student EOI",
         },
         {
           text: "Great teacher! The German classes for companies greatly improved our team's communication with German clients.",
           author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH"
+          role: "Game Designer BigPoint GmbH",
         },
         {
-          text: "Janna's German classes are always well-structured and very motivating. I highly recommend her!",
-          author: "Angel Ruiz",
-          role: "GeoPanel SA"
-        }
+          text: "Janna's classes make learning German fun and easy. Even though we have them on Mondays, for me they feel like a little Friday: a great start to the week, full of energy and practical learning.",
+          author: "Fabián Gómez",
+          role: "Geopannel SA",
+        },
       ],
       callToAction: "Want to share your experience?",
-      contactLink: "Contact us"
+      contactLink: "Contact us",
     },
     contact: {
       title: "Contact - German Teacher in Álava and La Rioja",
@@ -237,18 +238,18 @@ export const translations = {
         "Ich bin Janna Ziesemer, spezialisiert auf Deutsch als Fremdsprache. Ich biete Sprachschulung für Unternehmen in Álava und La Rioja sowie Privatunterricht vor Ort und online. Meine Erfahrung umfasst Firmenprogramme für multinationale Unternehmen und intensive Vorbereitung auf offizielle Prüfungen.",
       qualifications: {
         experience:
-          "Über 5 Jahre Deutschunterricht für Unternehmen und Studenten im Baskenland und La Rioja",
+          "Zehn Jahre Erfahrung im Deutschunterricht für Studierende und Unternehmen in Hamburg, Barcelona und La Rioja",
         certifications:
           "Offizielle Zertifizierungen anerkannt vom Goethe-Institut und deutschen Universitäten",
         specialization:
-          "Spezialistin für Firmentraining und personalisierte Einzelstunden",
+          "Business-Deutsch in Firmen wie Beiersdorf (Hamburg), SCRM – Lidl International Hub (Barcelona), GeoPannel (Logroño)",
         examPrep:
           "Garantierte Vorbereitung für Goethe-, TestDaF-, Telc- und DSH-Prüfungen",
         title: "Erfahrung und Zertifizierungen",
         cert1Title: "Offizielle DaF-Zertifizierung (Deutsch als Fremdsprache)",
-        cert1Desc: "Journalismus und Multimedia - Universität Hamburg",
-        cert2Title: "Multinationale Unternehmenserfahrung",
-        cert2Desc: "Deutschtraining für Technologie- und Fertigungsunternehmen",
+        cert1Desc: "Abschluss in Journalismus und Medienkommunikation – HAW Hamburg",
+        cert2Title: "Internationale Erfahrung an der Goethe-Schule in Bolivien",
+        cert2Desc: "Dozentin an der Escuela Oficial de Idiomas – Sommerkurs",
         cert3Title: "Spezialistin für offizielle Prüfungen",
         cert3Desc: "Zertifizierte Vorbereitung Goethe, TestDaF, Telc, DSH",
       },
@@ -268,21 +269,21 @@ export const translations = {
         {
           text: "Janna ist eine außergewöhnliche Lehrerin. Ihre Lehrmethode hat mir geholfen, die Goethe B2 Prüfung in nur wenigen Monaten zu bestehen.",
           author: "Julia Soar",
-          role: "Einzelstudent EOI"
+          role: "Einzelstudent EOI",
         },
         {
           text: "Großartige Lehrerin! Der Deutschunterricht für Unternehmen hat die Kommunikation unseres Teams mit deutschen Kunden erheblich verbessert.",
           author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH"
+          role: "Game Designer BigPoint GmbH",
         },
         {
-          text: "Jannas Deutschstunden sind immer gut strukturiert und sehr motivierend. Ich kann sie wärmstens empfehlen!",
-          author: "Angel Ruiz",
-          role: "GeoPanel SA"
-        }
+          text: "Jannas Unterricht macht Deutschlernen echt locker und spaßig. Auch wenn wir montags Unterricht haben, fühlt es sich für mich an wie ein kleiner Freitag – ein super Wochenstart mit viel Energie und praktischem Lernen.",
+          author: "Fabián Gómez",
+          role: "Geopannel SA",
+        },
       ],
       callToAction: "Möchten Sie Ihre Erfahrung teilen?",
-      contactLink: "Kontaktieren Sie uns"
+      contactLink: "Kontaktieren Sie uns",
     },
     contact: {
       title: "Kontakt - Deutschlehrerin in Álava und La Rioja",
