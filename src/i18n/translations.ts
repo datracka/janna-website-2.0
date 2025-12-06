@@ -17,7 +17,7 @@ export const translations = {
     about: {
       title: "Profesora de Alemán Certificada",
       description:
-        "Soy Janna Ziesemer, profesora especializada en alemán e inglés como lengua extranjera. Ofrezco formación lingüística para empresas en Álava y La Rioja, así como clases particulares presenciales y online. Mi experiencia incluye programas corporativos para multinacionales y preparación intensiva para exámenes oficiales.",
+        "Soy Janna Ziesemer, profesora especializada en alemán como lengua extranjera. Ofrezco formación lingüística para empresas en Álava y La Rioja, así como clases particulares presenciales y online. Mi experiencia incluye programas corporativos para multinacionales y preparación intensiva para exámenes oficiales.",
       qualifications: {
         experience:
           "Diez años de experiencia enseñando alemán a estudiantes y empresas en Hamburgo, Barcelona y La Rioja",
@@ -57,8 +57,8 @@ export const translations = {
         },
         {
           text: "Gran profesora! Las clases de alemán para empresas mejoraron muchísimo la comunicación de nuestro equipo con los clientes alemanes.",
-          author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH",
+          author: "Vicens Fayos",
+          role: "Software Developer BigPoint GmbH",
         },
         {
           text: "Las clases de Janna hacen que aprender alemán sea divertido y ligero. Aunque las tenemos los lunes, para mí son como un pequeño viernes: un buen inicio de semana, lleno de energía y aprendizaje práctico.",
@@ -127,7 +127,7 @@ export const translations = {
     about: {
       title: "Certified German Teacher",
       description:
-        "I am Janna Ziesemer, specialized in German and English as foreign languages. I provide language training for companies in Álava and La Rioja, as well as private lessons both in-person and online. My experience includes corporate programs for multinational companies and intensive preparation for official examinations.",
+        "I am Janna Ziesemer, specialized in German as foreign languages. I provide language training for companies in Álava and La Rioja, as well as private lessons both in-person and online. My experience includes corporate programs for multinational companies and intensive preparation for official examinations.",
       qualifications: {
         experience:
           "Ten years of experience teaching German to students and companies in Hamburg, Barcelona, and La Rioja",
@@ -141,7 +141,8 @@ export const translations = {
         cert1Title: "Official DaF Certification (German as Foreign Language)",
         cert1Desc: "Degree in Journalism and Media Communication – HAW Hamburg",
         cert2Title: "International experience at the Goethe School in Bolivia",
-        cert2Desc: "Teacher at the Official School of Languages – summer courses",
+        cert2Desc:
+          "Teacher at the Official School of Languages – summer courses",
         cert3Title: "Official Exam Specialist",
         cert3Desc: "Certified preparation Goethe, TestDaF, Telc, DSH",
       },
@@ -165,8 +166,8 @@ export const translations = {
         },
         {
           text: "Great teacher! The German classes for companies greatly improved our team's communication with German clients.",
-          author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH",
+          author: "Vicens Fayos",
+          role: "Software Developer BigPoint GmbH",
         },
         {
           text: "Janna's classes make learning German fun and easy. Even though we have them on Mondays, for me they feel like a little Friday: a great start to the week, full of energy and practical learning.",
@@ -247,7 +248,8 @@ export const translations = {
           "Garantierte Vorbereitung für Goethe-, TestDaF-, Telc- und DSH-Prüfungen",
         title: "Erfahrung und Zertifizierungen",
         cert1Title: "Offizielle DaF-Zertifizierung (Deutsch als Fremdsprache)",
-        cert1Desc: "Abschluss in Journalismus und Medienkommunikation – HAW Hamburg",
+        cert1Desc:
+          "Abschluss in Journalismus und Medienkommunikation – HAW Hamburg",
         cert2Title: "Internationale Erfahrung an der Goethe-Schule in Bolivien",
         cert2Desc: "Dozentin an der Escuela Oficial de Idiomas – Sommerkurs",
         cert3Title: "Spezialistin für offizielle Prüfungen",
@@ -273,8 +275,8 @@ export const translations = {
         },
         {
           text: "Großartige Lehrerin! Der Deutschunterricht für Unternehmen hat die Kommunikation unseres Teams mit deutschen Kunden erheblich verbessert.",
-          author: "Miguel Campillos",
-          role: "Game Designer BigPoint GmbH",
+          author: "Vicens Fayos",
+          role: "Software Developer BigPoint GmbH",
         },
         {
           text: "Jannas Unterricht macht Deutschlernen echt locker und spaßig. Auch wenn wir montags Unterricht haben, fühlt es sich für mich an wie ein kleiner Freitag – ein super Wochenstart mit viel Energie und praktischem Lernen.",
