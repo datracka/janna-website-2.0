@@ -8,7 +8,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Profesora de alemán certificada en Álava y La Rioja. Clases de alemán para empresas y particulares, presenciales y online. Preparación exámenes oficiales Goethe, TestDaF. ¡Primera clase gratis!" } = Astro.props;
+const { title, description = "Profesora de alemán e inglés certificada en Álava y La Rioja. Clases de alemán e inglés para empresas y particulares, presenciales y online. Preparación exámenes oficiales Goethe, TestDaF. ¡Primera clase gratis!" } = Astro.props;
 
 const currentLanguage = getCurrentLanguage(Astro.url.pathname);
 const t = getTranslations(currentLanguage);
@@ -19,7 +19,7 @@ const t = getTranslations(currentLanguage);
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="keywords" content="profesor alemán, clases alemán Álava, clases alemán La Rioja, formación alemán empresas, alemán negocios, exámenes Goethe, TestDaF, alemán online, deutschlehrer, German teacher" />
+    <meta name="keywords" content="profesor alemán, profesor inglés, clases alemán Álava, clases inglés Álava, clases alemán La Rioja, clases inglés La Rioja, formación alemán inglés empresas, alemán negocios, inglés negocios, exámenes Goethe, TestDaF, alemán online, inglés online, deutschlehrer, English teacher, German teacher" />
     <meta name="author" content="Janna Ziesemer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -43,12 +43,12 @@ const t = getTranslations(currentLanguage);
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "Janna Ziesemer - Profesora de Alemán",
-      "description": "Profesora de alemán certificada especializada en formación corporativa y clases particulares en Álava y La Rioja",
+      "name": "Janna Ziesemer - Profesora de Alemán e Inglés",
+      "description": "Profesora de alemán e inglés certificada especializada en formación corporativa y clases particulares en Álava y La Rioja",
       "url": "https://janna-ziesemer.com",
       "areaServed": ["Álava", "La Rioja", "País Vasco"],
-      "serviceType": ["Clases de alemán", "Formación corporativa", "Preparación exámenes"],
-      "teaches": "Alemán como lengua extranjera",
+      "serviceType": ["Clases de alemán", "Clases de inglés", "Formación corporativa", "Preparación exámenes"],
+      "teaches": ["Alemán como lengua extranjera", "Inglés como lengua extranjera"],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",

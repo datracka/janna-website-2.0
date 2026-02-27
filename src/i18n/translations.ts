@@ -7,17 +7,17 @@ export const translations = {
       contact: "Contacto",
     },
     hero: {
-      title: "Profesora de Alemán en Álava y La Rioja",
-      titleMobile: "Profesora de Alemán",
-      subtitle: "Especialista en Alemán como Lengua Extranjera",
+      title: "Profesora de Alemán e Inglés en Álava y La Rioja",
+      titleMobile: "Profesora de Alemán e Inglés",
+      subtitle: "Especialista en Alemán e Inglés como Lenguas Extranjeras",
       tagline:
-        "Clases de alemán para empresas y particulares • Presencial y online • Preparación de exámenes oficiales",
+        "Clases de alemán e inglés para empresas y particulares • Presencial y online • Preparación de exámenes oficiales",
       cta: "Reserva tu clase de prueba gratuita",
     },
     about: {
-      title: "Profesora de Alemán Certificada",
+      title: "Profesora Certificada de Alemán e Inglés",
       description:
-        "Soy Janna Ziesemer, profesora especializada en alemán como lengua extranjera. Ofrezco formación lingüística para empresas en Álava y La Rioja, así como clases particulares presenciales y online. Mi experiencia incluye programas corporativos para multinacionales y preparación intensiva para exámenes oficiales.",
+        "Soy Janna Ziesemer, profesora especializada en alemán e inglés como lenguas extranjeras. Ofrezco formación lingüística para empresas en Álava y La Rioja, así como clases particulares presenciales y online. Mi experiencia incluye programas corporativos para multinacionales y preparación intensiva para exámenes oficiales.",
       qualifications: {
         experience:
           "Diez años de experiencia enseñando alemán a estudiantes y empresas en Hamburgo, Barcelona y La Rioja",
@@ -39,12 +39,12 @@ export const translations = {
       },
     },
     services: {
-      title: "Servicios de Enseñanza de Alemán",
+      title: "Servicios de Enseñanza de Alemán e Inglés",
       private:
-        "Clases Particulares de Alemán (Presencial en Álava/La Rioja y Online)",
-      corporate: "Formación Corporativa en Alemán para Empresas",
+        "Clases Particulares de Alemán e Inglés (Presencial en Álava/La Rioja y Online)",
+      corporate: "Formación Corporativa en Alemán e Inglés para Empresas",
       exam: "Preparación de Exámenes Oficiales (Goethe, TestDaF, Telc)",
-      business: "Alemán de Negocios y Técnico",
+      business: "Alemán e Inglés de Negocios y Técnico",
       pricing: "Solicita presupuesto personalizado - Primera clase gratuita",
     },
     testimonials: {
@@ -70,7 +70,7 @@ export const translations = {
       contactLink: "Contáctanos",
     },
     contact: {
-      title: "Contacto - Profesora de Alemán en Álava y La Rioja",
+      title: "Contacto - Profesora de Alemán e Inglés en Álava y La Rioja",
       email: "Correo electrónico",
       phone: "Teléfono",
       social: "Redes sociales",
@@ -117,17 +117,17 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "German Teacher in Álava and La Rioja",
-      titleMobile: "German Teacher",
-      subtitle: "German as Foreign Language Specialist",
+      title: "German and English Teacher in Álava and La Rioja",
+      titleMobile: "German & English Teacher",
+      subtitle: "German and English as Foreign Languages Specialist",
       tagline:
-        "German classes for companies and individuals • In-person and online • Official exam preparation",
+        "German and English classes for companies and individuals • In-person and online • Official exam preparation",
       cta: "Book your free trial lesson",
     },
     about: {
-      title: "Certified German Teacher",
+      title: "Certified German and English Teacher",
       description:
-        "I am Janna Ziesemer, specialized in German as foreign languages. I provide language training for companies in Álava and La Rioja, as well as private lessons both in-person and online. My experience includes corporate programs for multinational companies and intensive preparation for official examinations.",
+        "I am Janna Ziesemer, specialized in German and English as foreign languages. I provide language training for companies in Álava and La Rioja, as well as private lessons both in-person and online. My experience includes corporate programs for multinational companies and intensive preparation for official examinations.",
       qualifications: {
         experience:
           "Ten years of experience teaching German to students and companies in Hamburg, Barcelona, and La Rioja",
@@ -148,12 +148,12 @@ export const translations = {
       },
     },
     services: {
-      title: "German Teaching Services",
+      title: "German and English Teaching Services",
       private:
-        "Private German Lessons (In-person in Álava/La Rioja and Online)",
-      corporate: "Corporate German Training for Companies",
+        "Private German and English Lessons (In-person in Álava/La Rioja and Online)",
+      corporate: "Corporate German and English Training for Companies",
       exam: "Official Exam Preparation (Goethe, TestDaF, Telc)",
-      business: "Business and Technical German",
+      business: "Business and Technical German and English",
       pricing: "Request personalized quote - First lesson free",
     },
     testimonials: {
@@ -179,7 +179,7 @@ export const translations = {
       contactLink: "Contact us",
     },
     contact: {
-      title: "Contact - German Teacher in Álava and La Rioja",
+      title: "Contact - German and English Teacher in Álava and La Rioja",
       email: "Email",
       phone: "Phone",
       social: "Social Media",
@@ -226,17 +226,17 @@ export const translations = {
       contact: "Kontakt",
     },
     hero: {
-      title: "Deutschlehrerin in Álava und La Rioja",
-      titleMobile: "Deutschlehrerin",
-      subtitle: "DaF-Spezialistin",
+      title: "Deutsch- und Englischlehrerin in Álava und La Rioja",
+      titleMobile: "Deutsch- und Englischlehrerin",
+      subtitle: "DaF- und Englisch-Spezialistin",
       tagline:
-        "Deutschunterricht für Unternehmen und Privatpersonen • Präsenz und online • Offizielle Prüfungsvorbereitung",
+        "Deutsch- und Englischunterricht für Unternehmen und Privatpersonen • Präsenz und online • Offizielle Prüfungsvorbereitung",
       cta: "Kostenlose Probestunde buchen",
     },
     about: {
-      title: "Zertifizierte Deutschlehrerin",
+      title: "Zertifizierte Deutsch- und Englischlehrerin",
       description:
-        "Ich bin Janna Ziesemer, spezialisiert auf Deutsch als Fremdsprache. Ich biete Sprachschulung für Unternehmen in Álava und La Rioja sowie Privatunterricht vor Ort und online. Meine Erfahrung umfasst Firmenprogramme für multinationale Unternehmen und intensive Vorbereitung auf offizielle Prüfungen.",
+        "Ich bin Janna Ziesemer, spezialisiert auf Deutsch und Englisch als Fremdsprachen. Ich biete Sprachschulung für Unternehmen in Álava und La Rioja sowie Privatunterricht vor Ort und online. Meine Erfahrung umfasst Firmenprogramme für multinationale Unternehmen und intensive Vorbereitung auf offizielle Prüfungen.",
       qualifications: {
         experience:
           "Zehn Jahre Erfahrung im Deutschunterricht für Studierende und Unternehmen in Hamburg, Barcelona und La Rioja",
@@ -257,12 +257,12 @@ export const translations = {
       },
     },
     services: {
-      title: "Deutschunterricht-Dienstleistungen",
+      title: "Deutsch- und Englischunterricht",
       private:
-        "Privater Deutschunterricht (Präsenz in Álava/La Rioja und Online)",
-      corporate: "Firmen-Deutschtraining für Unternehmen",
+        "Privater Deutsch- und Englischunterricht (Präsenz in Álava/La Rioja und Online)",
+      corporate: "Firmen-Deutsch- und Englischtraining für Unternehmen",
       exam: "Vorbereitung auf offizielle Prüfungen (Goethe, TestDaF, Telc)",
-      business: "Wirtschaftsdeutsch und Fachsprache",
+      business: "Wirtschafts- und Fachsprache Deutsch und Englisch",
       pricing: "Individuelles Angebot anfordern - Erste Stunde kostenlos",
     },
     testimonials: {
@@ -288,7 +288,7 @@ export const translations = {
       contactLink: "Kontaktieren Sie uns",
     },
     contact: {
-      title: "Kontakt - Deutschlehrerin in Álava und La Rioja",
+      title: "Kontakt - Deutsch- und Englischlehrerin in Álava und La Rioja",
       email: "E-Mail",
       phone: "Telefon",
       social: "Soziale Medien",
